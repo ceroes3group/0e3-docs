@@ -44,26 +44,54 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 
 | Repo | Estado remoto | Branch principal |
 |---|---|---|
-| [0e3-landing](https://github.com/ceroes3group/0e3-landing) | ✅ Publicado | `main` @ `dadfe70` |
-| `0e3-docs` | ⏸ Local only | `main` |
-| `0e3-aliados-comerciales` | ⏸ Local only | `chore/oe3-architecture` |
-| `0e3-home` | ⏸ Local only | `chore/oe3-architecture` |
-| `0e3-gastro` | ⏸ Local only | `chore/oe3-architecture` |
+| [0e3-landing](https://github.com/ceroes3group/0e3-landing) | ✅ Publicado | `main` |
+| [0e3-docs](https://github.com/ceroes3group/0e3-docs) | ✅ Publicado | `main` |
+| [0e3-aliados-comerciales](https://github.com/ceroes3group/0e3-aliados-comerciales) | ✅ Publicado | `chore/oe3-architecture` |
+| [0e3-home](https://github.com/ceroes3group/0e3-home) | ✅ Publicado | `chore/oe3-architecture` |
+| [0e3-gastro](https://github.com/ceroes3group/0e3-gastro) | ✅ Publicado | `chore/oe3-architecture` |
 
 ---
 
 ## Decisiones tomadas
 
-1. **`0e3.com.ar`** es el dominio canónico institucional (no `0es3.com.ar`).
-2. **`0es3.com.ar`** actúa solo como alias con redirect 301 en Cloudflare.
-3. Landing export estático Next.js → Firebase Hosting site **`0es3-com-ar`** (ID no renombrable).
-4. Cada producto mantiene su **proyecto Firebase separado**; no unificar sites Gastro APK vs web.
-5. Git inicializado localmente en aliados, HOME y Gastro; push pendiente de aprobación.
-6. POS, Gastro prod, OTA, billing y MercadoPago **fuera de alcance** sin plan explícito.
+1. **Portal objetivo:** `0es3.com.ar` — hub marca + productos (transición desde `0e3.com.ar` / `0e3-landing`).
+2. **`0es3.com.ar`** redirect hacia apex portal (migración DNS pendiente).
+3. Landing export estático Next.js → Firebase site **`0es3-com-ar`** (ID no renombrable).
+4. Cada producto: **repo + deploy + Firebase** separados.
+5. Estandarizar ramas: `main`, `develop`, `feature/*`, `hotfix/*`, `release/*`.
+6. POS, Gastro prod, OTA, billing — **fuera de alcance** sin plan explícito.
 
 ---
 
-## Riesgos críticos
+## Índice principal
+
+| Documento | Descripción |
+|---|---|
+| [arquitectura-general.md](arquitectura-general.md) | Visión ecosistema y separación de capas |
+| [dominios.md](dominios.md) | Mapa DNS objetivo `0es3.com.ar` |
+| [deploy.md](deploy.md) | Deploy por producto |
+| [seguridad.md](seguridad.md) | Secretos y checklist |
+| [roadmap.md](roadmap.md) | Fases 1–6 |
+| [reports/FASE-CONSOLIDACION-FINAL.md](reports/FASE-CONSOLIDACION-FINAL.md) | Informe consolidación |
+
+### support-core/
+
+| Documento | Descripción |
+|---|---|
+| [git-branch-strategy.md](support-core/git-branch-strategy.md) | Flujo Git estándar |
+| [ci-cd-standard.md](support-core/ci-cd-standard.md) | Workflows reutilizables |
+| [portal-products-spec.md](support-core/portal-products-spec.md) | Sección Productos del hub |
+| [node-migration-plan.md](support-core/node-migration-plan.md) | Node 20 → 22 (plan) |
+
+### scripts/
+
+| Script | Descripción |
+|---|---|
+| [security-audit.ps1](scripts/security-audit.ps1) | Checklist automático pre-push |
+
+---
+
+## Índice extendido
 
 | Área | Riesgo | Acción |
 |---|---|---|

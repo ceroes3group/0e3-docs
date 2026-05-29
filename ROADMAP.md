@@ -1,61 +1,112 @@
-# Roadmap 0E3
+# Roadmap — Ecosistema 0E3
 
-## Fase 1: Branding 0E3
+**Horizonte:** 2026–2028  
+**Enfoque:** infraestructura, dominios, productos — sin nuevas features de negocio en esta fase.
 
-- Definir logo, paleta, tipografia y tono institucional.
-- Crear guia de marca inicial.
-- Preparar assets para GitHub, web y redes.
-- Crear repos vacios: `0e3-brand`, `0e3-docs`, `0e3-landing`.
+---
 
-## Fase 2: 0E3 POS — estabilizacion (sin migracion)
+## Vista por fases
 
-**Coordinacion:** el repo/app actual `nexopos-dc-multi-tenant` se trata como **0E3 POS** a nivel conceptual. **No mover ni renombrar** el repo productivo en esta fase.
+```mermaid
+timeline
+  title Roadmap 0E3
+  section FASE 1
+    Portal 0es3.com.ar : Hub marca + productos
+                        : Consolidar repos portal
+                        : CI docs + landing
+  section FASE 2
+    Aliados : DNS aliados.0es3.com.ar
+            : Push WIP estable
+            : Captación candidatos reales
+  section FASE 3
+    Gastro : Alinear Git + workflow CI
+           : DNS staging/prod
+           : Billing Core staging
+  section FASE 4
+    NexoPOS : Migrar a ceroes3group/nexopos-dc
+            : DNS nexopos.0es3.com.ar
+            : Billing Core prod
+  section FASE 5
+    Marketplace 0E3 : Catálogo apps.0es3.com.ar
+                    : Billing unificado
+  section FASE 6
+    Red comercial : Aliados operativos en campo
+                  : Expansión regional
+```
 
-- Auditar repositorio productivo actual.
-- Limpiar secretos y configuraciones locales.
-- Documentar stack, instalacion y comandos.
-- Reservar `0e3-pos-web` como placeholder para futura capa web/admin.
-- Completar roadmap tecnico y comercial de 0E3 POS.
-- Definir criterios de migracion y rollback.
+---
 
-### Criterio de salida de Fase 2
+## FASE 1 — Portal 0E3
 
-Solo cuando el roadmap 0E3 POS este estable se habilita la Fase 2b (migracion).
+| Entregable | Estado |
+|---|---|
+| Landing live (`0e3.com.ar`) | ✅ |
+| Redirect `0es3.com.ar` | ✅ |
+| Repo `0e3-docs` central | ✅ |
+| Portal en `0es3.com.ar` como apex | ⏸ |
+| Consolidar `0e3-home` = portal web | ⏸ |
+| Sección Productos en hub | ✅ (landing `/apps/`) |
+| Estandarizar ramas `main`/`develop` | ⏸ |
 
-## Fase 2b: Migracion 0E3 POS (diferida)
+---
 
-- Crear o usar repo destino (`0e3-pos` o `0e3-pos-web` segun decision final).
-- Transferir codigo con historial auditado.
-- Actualizar remotes, CI/CD y documentacion.
-- Archivar repo legacy.
+## FASE 2 — Aliados
 
-## Fase 3: Migracion 0E3 Gastro
+| Entregable | Estado |
+|---|---|
+| Repo GitHub `0e3-aliados-comerciales` | ✅ |
+| Doc arquitectura | ✅ |
+| DNS `aliados.0es3.com.ar` | ⏸ |
+| Estabilizar WIP local → `develop` | ⏸ |
+| Wizard + OTP en producción | ⏸ (staging OK) |
 
-- Auditar repositorio actual (`nexopos_gastro_pos`).
-- Separar configuracion sensible.
-- Migrar codigo a `0e3-gastro`.
-- Definir relacion tecnica con 0E3 POS.
+---
 
-## Fase 4: Landing oficial
+## FASE 3 — Gastro
 
-- Crear landing institucional en `0e3-landing`.
-- Publicar propuesta de valor, productos y contacto.
-- Preparar SEO basico.
+| Entregable | Estado |
+|---|---|
+| Repo GitHub `0e3-gastro` | ✅ |
+| Alinear historial Git local/remoto | ⏸ |
+| Workflow CI en GitHub | ⏸ (scope `workflow`) |
+| DNS custom staging/prod | ⏸ |
+| Billing Core adapter staging | ⏸ diseño |
 
-## Fase 5: Dominio pos.0e3.com.ar
+---
 
-- Definir hosting o plataforma.
-- Configurar DNS.
-- Validar HTTPS.
+## FASE 4 — NexoPOS
 
-## Fase 6: Cloudflare + correo corporativo
+| Entregable | Estado |
+|---|---|
+| Repo bajo `ceroes3group` | ⏸ |
+| DNS `nexopos.0es3.com.ar` | ⏸ |
+| Billing MP prod estable | ✅ operativo |
+| Migración Billing Core | ⏸ diseño |
 
-- Configurar DNS centralizado.
-- Evaluar correo corporativo.
-- Configurar politicas SPF, DKIM y DMARC.
+---
 
-## Fase 7: Documentacion comercial
+## FASE 5 — Marketplace 0E3
 
-- Crear documentacion para ventas, onboarding y soporte en `0e3-docs`.
-- Preparar FAQs y material por producto.
-- Definir proceso de mantenimiento documental.
+- `apps.0es3.com.ar` — launcher unificado
+- Suscripciones cross-product (Billing Core)
+- Panel admin 0E3
+
+---
+
+## FASE 6 — Red comercial
+
+- Aliados comerciales en campo
+- Métricas de captación y conversión
+- Integración CRM / reporting
+
+---
+
+## Priorización transversal
+
+| Prioridad | Tema |
+|---|---|
+| 🔴 Alta | Secretos, Gastro OTA/billing, POS prod |
+| 🟡 Media | Dominios, CI/CD, alineación Git |
+| 🟢 Baja | Node 22, marketplace, docs.0es3.com.ar |
+
+Detalle tareas: [`reports/FASE-CONSOLIDACION-FINAL.md`](reports/FASE-CONSOLIDACION-FINAL.md)
