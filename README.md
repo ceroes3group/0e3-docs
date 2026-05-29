@@ -74,6 +74,7 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 | [roadmap.md](roadmap.md) | Fases 1–6 |
 | [reports/FASE-N-ESTRATEGICA-REPORTE.md](reports/FASE-N-ESTRATEGICA-REPORTE.md) | Fase N — naming, ownership, gaps |
 | [reports/FASE-B-BILLING-PREPARATION-REPORTE.md](reports/FASE-B-BILLING-PREPARATION-REPORTE.md) | Fase B — preparación Billing Core |
+| [reports/FASE-B0.5-BUSINESS-RULES-REPORTE.md](reports/FASE-B0.5-BUSINESS-RULES-REPORTE.md) | Fase B0.5 — reglas de negocio |
 | [reports/FASE-CONSOLIDACION-FINAL.md](reports/FASE-CONSOLIDACION-FINAL.md) | Informe consolidación |
 
 ### architecture/
@@ -190,6 +191,8 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 | [0e3-shadow-mode-plan.md](billing/0e3-shadow-mode-plan.md) | Shadow mode paralelo |
 | [0e3-pos-migration-plan.md](billing/0e3-pos-migration-plan.md) | Migración POS 5 fases |
 | [0e3-billing-risk-register.md](billing/0e3-billing-risk-register.md) | Registro de riesgos |
+| [0e3-billing-business-rules.md](billing/0e3-billing-business-rules.md) | Reglas de negocio exhaustivas |
+| [0e3-billing-decision-matrix.md](billing/0e3-billing-decision-matrix.md) | Matrices de decisión por estado |
 
 ---
 
