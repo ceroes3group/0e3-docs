@@ -2,7 +2,7 @@
 
 Repositorio central de documentación transversal del ecosistema **0E3 · Cero Es Tres**.
 
-**Repo GitHub sugerido:** [ceroes3group/0e3-docs](https://github.com/ceroes3group/0e3-docs) *(pendiente creación y push)*
+**Repo:** [ceroes3group/0e3-docs](https://github.com/ceroes3group/0e3-docs)
 
 ---
 
@@ -136,6 +136,16 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 | [FASE-3-REPORTE-CONSOLIDADO.md](reports/FASE-3-REPORTE-CONSOLIDADO.md) | Merge, push landing, redirect |
 | [FASE-DOC-REPORTE-CONSOLIDADO.md](reports/FASE-DOC-REPORTE-CONSOLIDADO.md) | Cierre circuito documentación |
 
+### billing/
+
+| Documento | Descripción |
+|---|---|
+| [0e3-billing-current-audit.md](billing/0e3-billing-current-audit.md) | Auditoría billing existente por producto |
+| [0e3-billing-core-spec.md](billing/0e3-billing-core-spec.md) | Especificación 0E3 Billing Core |
+| [mercadopago-integration-plan.md](billing/mercadopago-integration-plan.md) | Plan integración MercadoPago |
+| [0e3-entitlements-access-control.md](billing/0e3-entitlements-access-control.md) | Licencias y control de acceso |
+| [0e3-billing-rollout-plan.md](billing/0e3-billing-rollout-plan.md) | Plan implementación por producto |
+
 ---
 
 ## Documentación por producto (repos individuales)
@@ -153,3 +163,10 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 
 Este repo **no debe contener** secretos, tokens, claves privadas, service accounts ni credenciales MercadoPago.  
 Solo referencias a nombres de variables y project IDs públicos de Firebase.
+
+## Links institucionales
+
+- Website: https://0e3.com.ar
+- Landing: https://github.com/ceroes3group/0e3-landing
+- Marca: https://github.com/ceroes3group/0e3-brand
+- Roadmap: [`ROADMAP.md`](ROADMAP.md)
