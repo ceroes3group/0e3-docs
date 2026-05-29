@@ -72,7 +72,15 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 | [deploy.md](deploy.md) | Deploy por producto |
 | [seguridad.md](seguridad.md) | Secretos y checklist |
 | [roadmap.md](roadmap.md) | Fases 1–6 |
+| [reports/FASE-N-ESTRATEGICA-REPORTE.md](reports/FASE-N-ESTRATEGICA-REPORTE.md) | Fase N — naming, ownership, gaps |
 | [reports/FASE-CONSOLIDACION-FINAL.md](reports/FASE-CONSOLIDACION-FINAL.md) | Informe consolidación |
+
+### architecture/
+
+| Documento | Descripción |
+|---|---|
+| [0e3-product-ownership-map.md](architecture/0e3-product-ownership-map.md) | Repo ↔ dominio ↔ producto |
+| [0e3-final-ecosystem-structure.md](architecture/0e3-final-ecosystem-structure.md) | Estructura definitiva propuesta |
 
 ### support-core/
 
@@ -82,6 +90,7 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 | [ci-cd-standard.md](support-core/ci-cd-standard.md) | Workflows reutilizables |
 | [portal-products-spec.md](support-core/portal-products-spec.md) | Sección Productos del hub |
 | [node-migration-plan.md](support-core/node-migration-plan.md) | Node 20 → 22 (plan) |
+| [0e3-support-gap-analysis.md](support-core/0e3-support-gap-analysis.md) | Gap analysis Support Core |
 
 ### scripts/
 
@@ -173,6 +182,7 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 | [mercadopago-integration-plan.md](billing/mercadopago-integration-plan.md) | Plan integración MercadoPago |
 | [0e3-entitlements-access-control.md](billing/0e3-entitlements-access-control.md) | Licencias y control de acceso |
 | [0e3-billing-rollout-plan.md](billing/0e3-billing-rollout-plan.md) | Plan implementación por producto |
+| [0e3-billing-gap-analysis.md](billing/0e3-billing-gap-analysis.md) | Gap analysis pre-implementación |
 
 ---
 
