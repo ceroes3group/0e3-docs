@@ -63,13 +63,11 @@
 
 ## D) Commits generados (locales)
 
-| Repo | Commit message | Archivos principales |
-|---|---|---|
-| `0E3_WORKSPACE/docs` | `chore: initialize 0e3 documentation hub` | README + estructura completa |
-| `aliados-comerciales` | `docs: add 0E3 architecture notes` | `docs/OE3-ARCHITECTURE.md` |
-| `oe3_home` | `docs: add 0E3 architecture notes` | `docs/OE3-ARCHITECTURE.md` |
-| `nexopos_gastro_pos` | `docs: add 0E3 architecture notes` | `docs/OE3-ARCHITECTURE.md` |
-| `landing` | `docs: fix cross-references to 0e3-docs hub` | `docs/DEPLOY-FIREBASE.md`, `docs/DNS-FIREBASE-CLOUDFLARE-CHECKLIST.md` |
+| `0E3_WORKSPACE/docs` | `chore: initialize 0e3 documentation hub` | `b0c2aac` — README + estructura completa |
+| `aliados-comerciales` | `docs: add 0E3 architecture notes` | `71a206e` — `docs/OE3-ARCHITECTURE.md` |
+| `oe3_home` | `docs: add 0E3 architecture notes` | `000fba1` — `docs/OE3-ARCHITECTURE.md` |
+| `nexopos_gastro_pos` | `docs: add 0E3 architecture notes` | `2ce22c8` — `docs/OE3-ARCHITECTURE.md` |
+| `landing` | `docs: fix cross-references to 0e3-docs hub` | `8fecdd3` — 2 archivos docs *(sin push)* |
 
 ---
 
