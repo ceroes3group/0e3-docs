@@ -91,29 +91,29 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 
 ---
 
-## Índice extendido
+## Riesgos críticos
 
 | Área | Riesgo | Acción |
 |---|---|---|
 | `e3-gastro-staging` | APK + OTA + billing en un site | No tocar rewrites ni `firebase.gastro-only.json` |
-| `nexopos-dc` | POS producción activo | Cutover `pos.0e3.com.ar` solo con ventana planificada |
+| `nexopos-dc` | POS producción activo | Cutover `nexopos.0es3.com.ar` solo con ventana planificada |
+| Repo `0e3-home` | Nombre vs rol portal vs app Flutter | Ver informe consolidación |
 | MercadoPago | URLs de callback en env | No cambiar dominios sin actualizar MP |
-| Gastro Git | ZIPs ~5.5 MB en repo | Eliminar del índice antes del primer push |
-| Secretos | `.env`, service accounts | Nunca commitear; ver `.gitignore` por proyecto |
+| Secretos | `.env`, service accounts | Ejecutar `scripts/security-audit.ps1` pre-push |
 
 ---
 
 ## Próximos pasos
 
-1. Aprobar push de este repo → `ceroes3group/0e3-docs`
-2. Crear remotes y push aliados / home / gastro
-3. Cutover DNS bajo riesgo: `home.0e3.com.ar`, `aliados.0e3.com.ar`
-4. Cutover Gastro web staging (riesgo medio)
-5. Cutover POS y `staging.0e3.com.ar` (alto/crítico)
+1. Resolver naming portal (`0e3-home` vs `0e3-landing`)
+2. Alinear Gastro Git + workflow CI
+3. Crear ramas `develop` en repos producto
+4. Cutover DNS subdominios `0es3.com.ar`
+5. Ver [`reports/FASE-CONSOLIDACION-FINAL.md`](reports/FASE-CONSOLIDACION-FINAL.md)
 
 ---
 
-## Índice de documentación
+## Índice extendido (legacy)
 
 ### architecture/
 
