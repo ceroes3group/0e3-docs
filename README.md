@@ -73,6 +73,7 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 | [seguridad.md](seguridad.md) | Secretos y checklist |
 | [roadmap.md](roadmap.md) | Fases 1–6 |
 | [reports/FASE-N-ESTRATEGICA-REPORTE.md](reports/FASE-N-ESTRATEGICA-REPORTE.md) | Fase N — naming, ownership, gaps |
+| [reports/FASE-B-BILLING-PREPARATION-REPORTE.md](reports/FASE-B-BILLING-PREPARATION-REPORTE.md) | Fase B — preparación Billing Core |
 | [reports/FASE-CONSOLIDACION-FINAL.md](reports/FASE-CONSOLIDACION-FINAL.md) | Informe consolidación |
 
 ### architecture/
@@ -183,6 +184,12 @@ Detalle completo: [`firebase/oe3-hosting-map.md`](firebase/oe3-hosting-map.md)
 | [0e3-entitlements-access-control.md](billing/0e3-entitlements-access-control.md) | Licencias y control de acceso |
 | [0e3-billing-rollout-plan.md](billing/0e3-billing-rollout-plan.md) | Plan implementación por producto |
 | [0e3-billing-gap-analysis.md](billing/0e3-billing-gap-analysis.md) | Gap analysis pre-implementación |
+| [0e3-billing-repo-blueprint.md](billing/0e3-billing-repo-blueprint.md) | Blueprint repo `0e3-billing` |
+| [0e3-pos-billing-extraction-plan.md](billing/0e3-pos-billing-extraction-plan.md) | Extracción billing POS → Core |
+| [0e3-billing-contracts.md](billing/0e3-billing-contracts.md) | Contratos Firestore compartidos |
+| [0e3-shadow-mode-plan.md](billing/0e3-shadow-mode-plan.md) | Shadow mode paralelo |
+| [0e3-pos-migration-plan.md](billing/0e3-pos-migration-plan.md) | Migración POS 5 fases |
+| [0e3-billing-risk-register.md](billing/0e3-billing-risk-register.md) | Registro de riesgos |
 
 ---
 
